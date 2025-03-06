@@ -59,9 +59,7 @@ def search_jobs():
     }
     
     with st.spinner("Searching for jobs..."):
-        time.sleep(10)
-        # response = requests.post(API_SEARCH_URL, json=payload)
-        response = requests.post(API_SEARCH_URL.replace("/search_jobs", "/search_jobs_mock"), json=payload)
+        response = requests.post(API_SEARCH_URL, json=payload)
         
         if response.status_code == 200:
             try:
