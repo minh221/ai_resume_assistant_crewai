@@ -1,0 +1,10 @@
+streamlit
+requests
+pymupdf
+python-dotenv
+crewai
+langchain
+langchain_openai
+fastapi
+pydantic
+uvicorn
